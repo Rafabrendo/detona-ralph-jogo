@@ -1,0 +1,11 @@
+@charset "UTF-08";
+
+@import url(variaveis.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Vai medir o tamanho da caixa de borda a borda */
+    font-family: var(--font1);
+}
