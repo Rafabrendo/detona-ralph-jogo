@@ -69,7 +69,7 @@ function addListenerHitBox(){
                 state.values.hitPosition = null;
                 // playSound();
                 playSound("hit"); //Passei como parametro o primeiro nome do som
-            }else{
+            }else if(square.id != state.values.hitPosition){
                 
                 state.values.InitialLife--;
                 state.view.life.textContent = state.values.InitialLife;
