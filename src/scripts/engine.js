@@ -73,11 +73,13 @@ function addListenerHitBox(){
                 
                 state.values.InitialLife--;
                 state.view.life.textContent = state.values.InitialLife;
-                if(state.values.InitialLife <= 0){
+                if(state.values.InitialLife < 1){
                     clearInterval(state.actions.countDownTimerId);//vai limpar os intervalos da memoria
                     clearInterval(state.actions.timerId);
                     clearInterval(state.values.InitialLife);
-                    alert("Time is over! O seu resultado foi: "+ state.values.result);
+                    alert("Life is over! O seu resultado foi: "+ state.values.result);
+                    restartGame();
+                    
                 }
             }
         });
